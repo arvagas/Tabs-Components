@@ -17,7 +17,8 @@ class Dropdown {
   toggleContent() {
     
     // Toggle the ".dropdown-hidden" class off and on
-    this.content.classList.toggle('dropdown-hidden');
+    // this.content.classList.toggle('dropdown-hidden');
+    $(".dropdown-content").slideToggle();
   }
 }
 
@@ -25,6 +26,7 @@ class Dropdown {
 let dropdowns = document.querySelectorAll('.dropdown').forEach( dropdown => new Dropdown(dropdown));
 
 // @@@@@@@@@@@@@@@@@@@@ Stretch Goal @@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@ Knight Mode @@@@@@@@@@
 const knightButton = document.querySelector('.knight-button')
 
 knightButton.addEventListener('click', () => {
@@ -45,7 +47,7 @@ knightButton.addEventListener('click', () => {
     document.querySelectorAll('.tabs-item').forEach( item => item.style.color = 'white')
     knightButton.textContent = 'Lambda Mode'
     knightButton.style.color = 'white'
-    knightButton.style.backgroundColor = 'red'
+    knightButton.style.backgroundColor = 'darkred'
   }
   else if (knightButton.textContent === 'Lambda Mode') {
     document.querySelector('body').style.backgroundColor = ''
