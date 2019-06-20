@@ -44,6 +44,18 @@
 .dropdown .dropdown-hidden {
   display: none;
 }
+.knight-button {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 18px;
+  color: yellow;
+  background-color: black;
+}
+.knight-button:hover {
+  color: black;
+  background-color: yellow;
+}
 .tabs {
   width: 100%;
 }
